@@ -1,0 +1,19 @@
+[package]
+name = "window-native"
+version = "0.1.0"
+edition = "2024"
+
+[build]
+rustflags = ["--check-cfg=cfg(cargo-clippy)"]
+
+[dependencies]
+objc = "0.2"
+core-graphics = "0.24.0"
+cocoa = "0.26.0"
+
+[package.metadata.bundle]
+name = "MyApp"
+identifier = "com.example.myapp"
+version = "0.1.0"
+resources = ["assets/"]
+
